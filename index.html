@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <title>Survey Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Color Preferences with Personalities</h1>
+            <p id="description">This survey's purpose is to find if there is a link between age and color preferation. We also would like to find other facts to relate.</p>
+        </header>
+        <form action="#" id="survey-form">
+            <div class="forWrap">
+                <div class="inputs">
+                    <div class="nameBox">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" placeholder="Your Name" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="emailBox">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="form-control" required>
+                    </div>
+                    <div class="numberBox">
+                        <label for="age" id="number-label">Age</label>
+                        <input type="number" id="number" name="age" min="10" max="99" placeholder="Your Age" class="form-control" required>
+                    
+                    </div>
+                </div>
+                
+                <div class="wheel-image">
+                    <img src="/imgs/wheel.png" alt="">
+                    <div class="form-colors">
+                        <label for="colors" id="colors-label">Which color do you like?</label>
+            
+                        <select name="colors" id="dropdown" class="form-control">
+                            <option value="Yellow" selected>Yellow</option>
+                            <option value="Yellow-Green">Yellow-Green</option>
+                            <option value="Green">Green</option>
+                            <option value="Blue-Green">Blue-Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Blue-Violet">Blue-Violet</option>
+                            <option value="Violet">Violet</option>
+                            <option value="Red-Violet">Red-Violet</option>
+                            <option value="Red">Red</option>
+                            <option value="Red-Orange">Red-Orange</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Yellow-Orange">Yellow-Orange</option>
+                        </select>
+            
+            
+                    </div>
+                    
+                </div>
+
+            
+            
+            </div>
+            
+            <div class="form-radio">
+                
+                
+                <p>What is your favorite pet?</p>
+                <div class="radio">
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="Dog"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Dog
+                    </label>
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="Cat"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Cat
+                    </label>
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="Bird"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Bird
+                    </label>
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="Other"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Other
+                    </label>
+                </div>
+                
+                <p>if you like to choose another pet, please write it down.</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Please write your favorite pet here..."
+                  value="other"
+                  rows="4" 
+                  cols="33"
+                  resize="none"
+                ></textarea>
+            </div>
+            <div class="form-feelings">
+                <p>What kind of person do you consider yourself to be?</p><br>
+                <section>
+                    <label>
+                        <input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Realistic</label>
+
+                <label><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Investigative (Thinker)</label>
+                <label><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Artistic (Creator)</label>
+                <label><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Social (Helper)</label>
+                <label><input
+                    name="prefer"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Enterprising (Persuader)</label></section>
+                
+                
+            </div>
+
+            <input type="submit" value="SUBMIT" id="submit">
+             
+            
+        </form>
+    </div>
+    
+    <div class="circle" id="circle2"></div>
+    
+    <div class="circle" id="circle4"></div>
+
+    
+     
+</body>
+</html> 
