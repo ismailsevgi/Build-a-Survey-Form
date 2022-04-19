@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 75px;
-    background: url(/imgs/Annual-Survey-Landing-Page-Background-1920-x-1080.png);
+    background: url(imgs/survey.png);
     height: 100vh;
     width: 100%;
     font-family: 'Akshar', sans-serif;
